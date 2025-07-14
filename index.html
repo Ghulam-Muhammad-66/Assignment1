@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ghulam Muhammad | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container{
+
+    width: 1520px;
+    height: 0px;
+    margin: auto;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background-color: #1e293b;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: white;
+  border: 4px solid black;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.head {
+  background-color: #0f172a;
+  /*width: 100%;*/
+  color: white;
+  display: flex;
+  /*margin-left: 5rem;*/
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+}
+
+.head-content {
+  max-width: 900px;
+  flex: 1 1 300px;
+}
+
+.head-content h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.head-content h2 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.highlight {
+  color: #38bdf8;
+  border: 4px solid white;
+}
+
+.head-content p {
+  margin: 10px 0;
+  color: #cbd5e1;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #38bdf8;
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+.head-image {
+  margin-top: 18px;
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.head-image img {
+  width: 250px;
+  border-radius: 50%;
+  border: 6px solid #38bdf8;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.head-image img:hover {
+  transform: scale(1.05);
+}
+
+
+/*end of home*/
+
+
+/* About Section */
+/* Reset some default styles */
+
+.about {
+  background: linear-gradient(to right, #0f172a, #0f174a);
+  color: #333;
+  /*background-image: url(3.jpeg);*/
+  /*background-repeat: no-repeat;*/
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 28rem;
+}
+
+/* Container styling */
+.about-section {
+  display: flex;
+  gap: 50px;
+  width: 1700px;
+  align-items: center;
+  padding: 60px 40px;
+  background: black;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+}
+
+/* Image styling */
+.about-image {
+  border: 5px solid #00e1ff;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 225, 255, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+/* Text styling */
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.about-text h2 span {
+  color: #00e1ff;
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 600px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Button styling */
+.btn {
+  position: relative;
+  padding: 12px 28px;
+  background: transparent;
+  color: #00e1ff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid #00e1ff;
+  border-radius: 8px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, #00e1ff80, transparent);
+  transition: left 0.4s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #00e1ff10;
+  box-shadow: 0 0 15px #00e1ff88;
+}
+
+
+
+/*end of about*/
+
+
+.services {
+  padding: 80px 20px;
+  margin-top: 44rem;
+  background-color: #f5f5f5;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.service-card .icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #635bff;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+
+/*end of service*/
+
+
+
+/* Resume container - full width with centered content */
+.resume {
+  margin-bottom: -30rem;
+  width: 100%;
+  position: relative;
+  top: 30rem;
+  max-width: 1000px;
+  margin:  auto;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.resume header {
+  text-align: center;
+  border-bottom: 3px solid #4f8cff;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.resume header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.resume header p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+.contact p {
+  margin: 5px 0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #00509e;
+  text-decoration: underline;
+}
+
+.resum h2 {
+  color: #4f8cff;
+  border-left: 5px solid #4f8cff;
+  padding-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.resum ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li,
+.learning li {
+  background-color: #e8f0fe;
+  color: #333;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.skills li:hover,
+.learning li:hover {
+  background-color: #d0e2ff;
+  transform: scale(1.02);
+}
+
+.resum p {
+  margin-bottom: 10px;
+}
+
+.resum a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.resum a:hover {
+  color: #004c99;
+  text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .resume {
+    padding: 20px;
+  }
+
+  .resume header h1 {
+    font-size: 2rem;
+  }
+
+  .resume h2 {
+    font-size: 1.3rem;
+  }
+}
+
+
+/*end of resume*/
+
+
+.footer {
+  background-color: #0f172a;
+  position: relative;
+  top: 100rem;
+  color: #cbd5e1;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: #38bdf8;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #00e1ff;
+}
+
+
+@media (max-width: 800px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+      .hero-image img {
+        width: 150px;
+      }
+    }
+
+
+
+  </style>
+</head>
+<body>
+
+      <div class="container">
+        
+          <header>
+    <nav class="navbar">
+      <div class="logo">GM</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="head">
+    <div class="head-content">
+      <h1>Hello, it's Me</h1>
+      <h2>Ghulam Muhammad <span class="highlight">GM</span></h2>
+      <p>And I'm a <span class="highlight">Frontend Developer</span></p>
+      <p>I design and develop modern responsive websites using clean and efficient code.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="head-image">
+      <img src="1.jpg" alt="Varun MG" />
+    </div>
+  </section>
+
+      </div>
+
+
+
+              <!-- end of home -->
+
+
+    <div class="container">
+        <div class="about">
+          
+                   <section class="about-section">
+  <div class="about-image">
+    <img src="2.jpg">
+  </div>
+  <div class="about-text">
+    <h2>About <span>Me</span></h2>
+    <h3>Frontend Developer</h3>
+    <p>
+      I'm Ghulam Muhammad, a passionate frontend developer who loves turning creative ideas into responsive,
+      websites. I specialize in HTML, CSS, JavaScript, and modern libraries to build clean
+      and efficient web experiences.
+    </p>
+    <button class="btn">Contact me</button>
+  </div>
+</section>
+
+        </div>     
+    </div>
+
+
+
+
+    <!-- end of about -->
+
+
+    <div class="container">
+      
+          <section class="services">
+  <h2 class="section-title">My Services</h2>
+  <div class="services-grid">
+    
+    <div class="service-card">
+      <div class="icon">🎨</div>
+      <h3>UI/UX Design</h3>
+      <p>Beautiful and functional interfaces that are user-centered and pixel-perfect.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">💻</div>
+      <h3>Web Development</h3>
+      <p>High-performance websites using modern frameworks and clean code.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">📱</div>
+      <h3>Responsive Design</h3>
+      <p>Mobile-first, fluid layouts that adapt to any screen or device.</p>
+    </div>
+
+  </div>
+</section>
+
+
+    </div>
+
+
+    <!-- end of services -->
+
+
+    <div class="container">
+
+  <div class="resume">
+    <header>
+      <h1>Ghulam Muhammad</h1>
+      <p>Web Developer | Beginner </p>
+      <div class="contact">
+        <p>📧 shakirbhanbhro0@gmail.com</p>
+        <p>📍 Tando AllahYar, Pakistan</p>
+        <p>💻 github.com/Ghulam-Muhammad-66</p>
+      </div>
+    </header>
+
+    <section class="resum">
+      <h2>🎯 Career Objective</h2>
+      <p>
+        Passionate and self-taught web developer with a solid foundation in HTML, CSS, and JavaScript.
+        Recently completed 12th grade and now focused on building real-world projects and improving skills.
+        Looking for opportunities to grow and contribute in a team environment.
+      </p>
+    </section>
+
+    <section class="resum">
+      <h2>🛠️ Skills</h2>
+      <ul class="skills">
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>Responsive Design, Grid</li>
+        <li>Git & GitHub, VS Code</li>
+        <li>Bootstrap, CSS (basics)</li>
+        <li>Node.js (basics)</li>
+      </ul>
+    </section>
+
+    <section class="resum">
+      <h2>🎓 Education</h2>
+      <p><strong>12th Grade</strong> - S.M Degree Collage Tando allahyar</p>
+      <p>Completed: 2024 | Stream: [Medical]</p>
+    </section>
+
+    <section class="resum">
+      <h2>📚 Currently Learning</h2>
+      <ul class="learning">
+        <li>React.js</li>
+        <li>Git hub</li>
+        <li>JavaScript Projects</li>
+      </ul>
+    </section>
+  </div>
+
+
+    </div>
+
+      <!-- end of resume -->
+
+
+    <div class="container">
+      
+        <footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Ghulam Muhammad. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+
+</body>
+</html>
